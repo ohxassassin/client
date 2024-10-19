@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art by Sapna Gupta</title>
+
+    <!-- Linking Google Fonts for typography -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header section for navigation bar -->
+<header>
+    <nav class="navbar">
+        <!-- Website Logo and Name -->
+        <div class="logo">
+            <h1>Art by Sapna Gupta</h1>
+        </div>
+        <p>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776; <!-- Hamburger icon -->  
+        </div>
+        </p>
+        <script>
+            // JavaScript to toggle the mobile menu visibility
+            function toggleMenu() {
+                const navLinks = document.querySelector('.nav-links');
+                navLinks.classList.toggle('active');  // Toggle the 'active' class on menu
+            }
+        </script>
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">EVENTS & EXHIBITIONS</a></li>
+            <li><a href="#">COMMISSIONS</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- Hero section with the background image and main content -->
+    <section class="hero-section">
+        <div class="hero-overlay">
+            <div class="hero-text">
+                <!-- Main Heading and Introductory Text -->
+                <h2>Dive Into the World of Abstract Art</h2>
+                <p>Step into a vibrant realm where colors, textures, and emotions blend seamlessly. Explore Sapna Gupta's expressive works that invite you to see the world from a new perspective—where every painting tells a unique story.</p>
+                <!-- Button to explore the gallery -->
+                <a href="#" class="explore-btn">Explore Gallery -></a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Styling for the header section */
+header {
+    background-color: #111;
+    padding: 10px 0;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%; /* Adjusted width to fit smaller screens */
+    margin: 0 auto; /* Center align the navbar */
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Logo styling */
+.logo h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+    justify-content: flex-end; /* Right-align the links */
+    width: 100%; /* Make sure links take full available width */
+    margin-left: auto;
+}
+
+/* Individual link styling */
+.nav-links li {
+    margin: 0 10px;
+}
+
+/* Styling for anchor tags */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 10px 5px; /* Reduce padding to make sure links fit */
+}
+
+/* On hover, add underline */
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section background and text styling */
+.hero-section {
+    height: 100vh;
+    background: url('2.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+/* Hero overlay */
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hero text section */
+.hero-text {
+    text-align: center;
+    max-width: 700px;
+    padding: 20px;
+}
+
+/* Main heading in the hero section */
+.hero-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Paragraph in the hero section */
+.hero-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+/* Button styling */
+.explore-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+/* Button hover effect */
+.explore-btn:hover {
+    background-color: white;
+    color: #111;
+}
+
+/* ------------------- Responsive Styles Below ------------------- */
+
+/* Mobile and tablets (max width: 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack the navbar vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column; /* Stack links vertically */
+        align-items: flex-start; /* Align links to the left */
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Space between links */
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+        display: block;
+        width: 100%;
+    }
+
+    /* Optional: Add a hamburger menu for better UX */
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        margin-left: auto; /* Push the hamburger icon to the right */
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* Extra small screens (max width: 480px) */
+@media (max-width: 480px) {
+    .nav-links a {
+        font-size: 0.8rem; /* Smaller font for small screens */
+        padding: 8px 16px;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+}
